@@ -1,0 +1,20 @@
+import React from 'react'
+import './MemoryCard.css'
+
+export default function MemoryCard({ card, handleSelected, disabled,rotated }) {
+    const handleClick = () => {
+        if (!disabled) {
+            handleSelected(card)
+        }
+
+        console.log(card)
+    }
+    return (
+        <div className='card'>
+            <div className={rotated  ? "rotated":""}>
+                <img className='cardFront' src={card.path} />
+                <img className='cardBack' onClick={handleClick}  src="/img/cover.jpeg" alt="" />
+            </div>
+        </div>
+    )
+}
