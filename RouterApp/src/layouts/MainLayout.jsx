@@ -10,13 +10,14 @@ export const MainLayout = () => {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/about">About</NavLink>
                     <NavLink to='/Help'>Help</NavLink>
+                    <NavLink to='/Users'>Users</NavLink>
                 </nav>
 
             </header>
             <main className="container">
                 { navigation.state === "loading" && <Loading/> }
                 <Outlet /> {/*ROUTE OUTLET İÇERİKLERİNİ GÖSTER*/}
-                <Loading />
+              
             </main>
         </div>
     )
