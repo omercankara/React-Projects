@@ -1,0 +1,143 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+:root {
+  --primary: #feb236;
+  --secondary: #6b5b95;
+}
+
+body {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff
+}
+
+body {
+  font-family: 'Open-sans', 'sans-serif';
+  padding: 30px;
+  background-color: var(--secondary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--primary);
+
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+nav a.active {
+  background-color: var(--primary);
+}
+
+p {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+main {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.help-layout nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.help-layout nav a {
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+
+.faq .question {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+form {
+  margin-top: 25px;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+}
+
+form input,
+form textarea {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 40px;
+  border: 0;
+  width: 300px;
+  color: black;
+}
+
+form button {
+  border: 0;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  background-color:var(--primary) ;
+}
+
+form label{
+  margin-bottom: 10px;
+}
+
+.users .card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--secondary);
+}
+
+.users .card a{
+  font-size: 20px;
+}
+
+.user-details{
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.user-details ul {
+  padding: 30px;
+}
+
+
+.error{
+  color: red !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
