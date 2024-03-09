@@ -1,0 +1,26 @@
+.theme-selector{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    
+}
+
+.theme-links span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer; 
+    margin-left: 15px;
+}
+
+.mode-toggle{
+    margin-right: auto;
+
+}
+
+.mode-toggle img{
+   width: 25px;
+   height: 25px;
+   cursor: pointer;
+}
