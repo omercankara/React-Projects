@@ -1,0 +1,153 @@
+.app-ball-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .app-ball-content {
+    width: 90%;
+    height: 100%;
+
+    .app-ball-title {
+      width: 100%;
+      height: 10%;
+
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin: 0px;
+      }
+    }
+
+    .app-ball-table {
+      width: 100%;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ffffff;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #ffffff;
+        border-bottom: 1px solid gainsboro;
+      }
+      .product-image-cell {
+        width: 65%;
+        height: 10%;
+        text-align: left;
+
+        /* İlk hücrenin genişliği %50 */
+        img {
+          object-fit: contain;
+          height: 100px;
+          width: 10%;
+          text-align: left;
+        }
+      }
+
+      .other-cells {
+        width: calc(50% / 3);
+        text-align: center;
+        /* Diğer hücrelerin genişliği eşit olarak */
+        input{
+            text-align: center;
+            width: 15%;
+        }
+      }
+    }
+
+    .app-total-ball {
+      width: 100%;
+      height: 5%;
+      background-color: rgb(238, 238, 238);
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      .result {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        p {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .app-ball-form {
+      width: 100%;
+      height: 500px;
+
+      .app-form-content {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+
+        .app-form-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 20%;
+
+          h1 {
+            margin: 0px;
+          }
+
+          p {
+            margin: 0px;
+            color: rgb(110, 110, 110);
+          }
+        }
+
+        .input-group {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          height: 15%;
+
+          label {
+            font-size: 15px;
+            color: gray;
+          }
+          input {
+            width: 95%;
+            height: 50%;
+            border: none;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .app-total {
+    width: 90%;
+    height: 70%;
+  }
+}

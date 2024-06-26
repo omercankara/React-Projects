@@ -1,0 +1,186 @@
+.app-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    .app-header {
+        width: 100%;
+        height: 10%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid rgb(185, 185, 185);
+
+        .app-logo {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: normal;
+
+        }
+
+        .app-menu {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50%;
+            height: 100%;
+
+
+            ul {
+                width: 70%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding: 0px;
+
+
+                li {
+                    list-style-type: none;
+                    color: gray;
+                    cursor: pointer;
+
+                    .shopMenu {
+                        /* .shopMenu'un stil tanımlamaları */
+                    }
+
+                    &:hover {
+                        .subMenu {
+                            opacity: 1;
+                        }
+                    }
+                    }
+
+
+                    .openMenu {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-direction: row;
+                        margin-bottom: 10px;
+                    }
+
+                    .subMenu {
+                        z-index: 99;
+                        width: 100%;
+                        display: flex;
+                        opacity: 0;
+                        background-color: rgb(238, 238, 238);
+                        border-radius: 1vh;
+                        border: 1px solid rgb(167, 167, 167);
+
+                        .app-sub-left {
+                            width: 50%;
+                            height: 250px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            align-items: center;
+                            background-color: rgb(241, 241, 241);
+
+                            .app-sub-title {
+                                width: 90%;
+                                height: 10%;
+                                display: flex;
+
+                            }
+
+                            .app-sub-description {
+                                height: 35%;
+                                width: 90%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            h4 {
+                                color: black;
+                                margin: 0px;
+                                padding: 0px;
+                            }
+
+                            p {
+                                text-align: justify;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .app-sub-right {
+                            height: 92%;
+                            width: 50%;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            background-color: rgb(255, 255, 255);
+
+                            .app-categories {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                width: 100%;
+                                height: 30%;
+
+                                h5 {
+                                    height: 0px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    color: black;
+                                }
+
+                                p {
+                                    color: rgb(95, 95, 95);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .app-icon {
+                width: 35%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .search {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+
+                    i {
+                        margin: 0px;
+                        text-align: center;
+                        font-size: 28px;
+                        color: gray;
+                    }
+
+                    p {
+                        margin: 0px;
+                        font-size: 14px;
+                        color: rgb(146, 146, 146);
+                    }
+                }
+
+                .app-ball-icon {
+                    width: 15%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                }
+            }
+        }
+    }
